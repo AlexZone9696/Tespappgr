@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Колесо удачи</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Колесо удачи</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="top">
-        <div class="user">🎉 <span id="username">Имя</span></div>
-        <div class="balance">🪙 <span id="balance">0</span></div>
-    </div>
+  <div class="app">
+    <img src="assets/design.jpeg" alt="design" class="background"/>
+    <div class="overlay">
+      <div class="top-bar">
+        <div class="user">
+          🎉 <span>Adamu mohammed</span> <span class="coins">🪙 30000</span>
+        </div>
+        <div class="user">
+          🎉 <span>Africa man</span> <span class="coins">🪙 3</span>
+        </div>
+      </div>
 
-    <div class="wheel-container">
-        <canvas id="wheel" width="300" height="300"></canvas>
-        <button onclick="spinWheel()">🎯 Крутить</button>
-    </div>
+      <div class="spin-section">
+        <button class="spin-button">SPIN</button>
+      </div>
 
-    <div class="tokens">
-        <p>TON: <span>0.003</span> | BBQ: <span>0</span> | DOGS: <span>43320</span></p>
+      <div class="footer-menu">
+        <button>Главная</button>
+        <button>Задачи</button>
+        <button>Пригласить</button>
+        <button>Вывод</button>
+      </div>
     </div>
-
-    <div class="menu">
-        <button>🏠 Главная</button>
-        <button>📨 Задачи</button>
-        <button>👥 Пригласить</button>
-        <button>💰 Вывод</button>
-    </div>
-
-    <script src="/static/wheel.js"></script>
+  </div>
 </body>
 </html>
