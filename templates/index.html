@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Колесо удачи</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div id="top">
+        <div class="user">🎉 <span id="username">Имя</span></div>
+        <div class="balance">🪙 <span id="balance">0</span></div>
+    </div>
+
+    <div class="wheel-container">
+        <canvas id="wheel" width="300" height="300"></canvas>
+        <button onclick="spinWheel()">🎯 Крутить</button>
+    </div>
+
+    <div class="tokens">
+        <p>TON: <span>0.003</span> | BBQ: <span>0</span> | DOGS: <span>43320</span></p>
+    </div>
+
+    <div class="menu">
+        <button>🏠 Главная</button>
+        <button>📨 Задачи</button>
+        <button>👥 Пригласить</button>
+        <button>💰 Вывод</button>
+    </div>
+
+    <script src="/static/wheel.js"></script>
+</body>
+</html>
